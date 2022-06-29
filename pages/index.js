@@ -24,7 +24,7 @@ export default function Home() {
               </h2>
 
               <p>
-                PM4KNIME is a <i>process mining</i> extension, developed by the{" "}
+                PM4KNIME is a <i>process mining</i> extension developed by the{" "}
                 <a
                   href="http://fit.fraunhofer.de/process-mining"
                   target="_blank"
@@ -35,7 +35,7 @@ export default function Home() {
                 <a href="http://fit.fraunhofer.de/" target="_blank">
                   Fraunhofer Institute for Applied Information Technology
                 </a>
-                , for the leading open-source data science platform{" "}
+                for the leading open-source data science platform{" "}
                 <a
                   href="https://www.knime.com/knime-analytics-platform"
                   target="_blank"
@@ -130,7 +130,7 @@ export default function Home() {
             <div className="col-12">
               <h1 className="section-header">
                 <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
-                  Download from the KNIME hub
+                  Download
                 </a>
               </h1>
             </div>
