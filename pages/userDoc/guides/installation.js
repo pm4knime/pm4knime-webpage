@@ -12,14 +12,14 @@ export default function Installation() {
       <div className="container">
         <div className="section">
           <div className="row-userDoc">
-            <h1>Installation Instructions</h1>
+            {/* <h1>Installation Instructions</h1>
             <p>
               KNIME is installed at first to enable PM4KNIME usage. After
               installing KNIME, the PM4KNIME as one KNIME extension is installed
               separately by giving a link. KNIME Server supports workflow
               sharing and cooperation in KNIME, its use and installation are
               optional in this project.
-            </p>
+            </p> 
             <h4>&nbsp;</h4>
             <h4>ATTENTION!!</h4>
             <p>
@@ -70,38 +70,48 @@ export default function Installation() {
                 </ul>
               </li>
             </ul>
-            <h2>&nbsp;</h2>
-            <h2>PM4KNIME installation</h2>
+            <h2>&nbsp;</h2>*/}
+            <h2>PM4KNIME Installation</h2>
             <ol>
+              <li>
+                {" "}
+                <a href="https://www.knime.com/getting-started-download">
+                  Download
+                </a>
+                {" "} and {" "}
+                <a href="https://www.knime.com/installation">
+                  install
+                </a>
+                {" "} the latest version of KNIME Analytics Platform.
+              </li>
               <li>
                 {" "}
                 Go to{" "}
                 <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
-                  {" "}
-                  PM4KNIME extension page
+                  Process Mining Extension web page on the knime hub
                 </a>
+                .
               </li>
               <li>
-                Drag and drop the extension icon into KNIME application into a
-                workflow
+                Drag and drop the extension icon to the workbench of KNIME Analytics Platform.
                 <div className={"image-container"}>
                   <p>
                     <Image
                       src={
                         baseUrl + "/assets/images/Installation/DragAndDrop.png"
                       }
-                      height="200px"
-                      width="500px"
+                      height="245px"
+                      width="1468px"
                       alt="Exception screenshot"
                     ></Image>
                   </p>
                 </div>
+
               </li>
               <li>
-                Say yes to "Do you want to search and install the extension
-                'Process Mining Extension'"
+                A window will open asking if you want to search and install the extension or integration. Click "Yes" and follow the instructions.
               </li>
-              <li>Follow the Dialog and install the extension</li>
+
             </ol>
 
             <h3>&nbsp;</h3>

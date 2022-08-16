@@ -34,7 +34,7 @@ export default function Home() {
                 of the{" "}
                 <a href="http://fit.fraunhofer.de/" target="_blank">
                   Fraunhofer Institute for Applied Information Technology
-                </a>
+                </a>{" "}
                 for the leading open-source data science platform{" "}
                 <a
                   href="https://www.knime.com/knime-analytics-platform"
