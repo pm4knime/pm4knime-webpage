@@ -33,20 +33,21 @@ const NavbarFull = ({ style }) => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav>
+        {/*<Nav>
           <Link href={"/userDoc/"} passHref>
             <Nav.Link>Introduction</Nav.Link>
           </Link>
-        </Nav>
+        </Nav>*/}
         <Nav>
           <NavDropdown title="Getting Started" id="collasible-nav-dropdown">
-            <Link href="/userDoc/guides/" passHref>
+            {/*<Link href="/userDoc/guides/" passHref>
               <NavDropdown.Item>Introduction Guides</NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/features" passHref>
               <NavDropdown.Item>PM4KNIME Features</NavDropdown.Item>
             </Link>
             <NavDropdown.Divider />
+            */}
             <Link href="/userDoc/guides/installation" passHref>
               <NavDropdown.Item>Installation Instructions</NavDropdown.Item>
             </Link>
