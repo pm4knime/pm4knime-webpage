@@ -20,7 +20,7 @@ export default function Home() {
               />
               <h1 className="section-header">PM4KNIME</h1>
               <h2 className="mt-n3 mb-5">
-                Process Mining Meets the KNIME Analytics Platform
+                State-of-the-art process mining in the KNIME Analytics Platform
               </h2>
 
               <p>
@@ -34,7 +34,7 @@ export default function Home() {
                 of the{" "}
                 <a href="http://fit.fraunhofer.de/" target="_blank">
                   Fraunhofer Institute for Applied Information Technology
-                </a>{" "}
+                </a>
                 for the leading open-source data science platform{" "}
                 <a
                   href="https://www.knime.com/knime-analytics-platform"
@@ -42,11 +42,16 @@ export default function Home() {
                 >
                   KNIME
                 </a>
-                . PM4KNIME implements several state-of-the-art process mining algorithms in a user-friendly manner and is distributed under the <i>Apache 2.0 License</i>.
+                . PM4KNIME implements several state-of-the-art process mining
+                algorithms in a user-friendly manner and is distributed under
+                the <i>Apache 2.0 License</i>.
               </p>
 
               <p>
-                KNIME is an open-source workflow-based analytics platform that supports various techniques in the field of data science. Workflows are built in KNIME by sequentially connecting different nodes where each node is dedicated to performing a specific task based on the results of the preceding nodes. PM4KNIME integrates process mining into KNIME, allowing for the creation of analytics workflows that combine process mining with the other types of data science techniques available in KNIME in a scalable user-friendly environment.
+                KNIME is designed to compose and execute a sequence of data
+                manipulation steps, i.e., a data transformation workflow.
+                Combined with process mining technology, it supports large-scale
+                process mining analytics.
               </p>
             </div>
           </div>
@@ -77,7 +82,7 @@ export default function Home() {
             <div className="col-md-3  m-3 p-3 border rounded feature-box lead">
               <i className="fas fa-file-import fa-2x"></i>
               <div className="mt-3">
-                <strong>Create</strong> large-scale and repetitive analytics,
+                <strong>Create</strong> Large-scale and repetitive analytics,
                 fused with process mining.
               </div>
             </div>
@@ -87,14 +92,14 @@ export default function Home() {
               <i className="fas fa-chevron-right fa-2x ml-n3"></i>
               <div className="mt-3">
                 Create your process analysis <strong>comfortably</strong> in a
-                visual workflow environment.
+                visual workflow environment
               </div>
             </div>
 
             <div className="col-md-3  m-3 p-3 border rounded feature-box lead">
               <i className="fas fa-search fa-2x"></i>
               <div className="mt-3">
-                <strong>Discover</strong> process models from your event data.
+                <strong>Discover</strong> process models from your event data
               </div>
             </div>
 
@@ -120,33 +125,27 @@ export default function Home() {
         </div>
 
         <hr id="download" />
-        <div className="section mb-4">
-          <div className="row" id="download">
-            <div className="col">
+        <div className="section">
+          <div className="row">
+            <div className="col-12">
               <h1 className="section-header">
-                Overview
+                <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
+                  Download
+                </a>
               </h1>
             </div>
           </div>
 
           <div className="row">
-            <div className="col">
-              An overview of the included nodes in the latest version of PM4KNIME is available on the{" "}
-              <a
-                href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest"
-                target="_blank"
-              >
-                KNIME Hub
-              </a>
-              .
+            <div className="col-12 mt-3">
+              <div className="collapse text-monospace" id="collapseChangelog">
+                <div id="changelog-text" className="card card-body lead">
+                  Loading...
+                </div>
+              </div>
             </div>
           </div>
-          <div className="row mt-2 mb-2">
-            <div className="col-md-8"></div>
-            <div className="col-md-4"></div>
-          </div>
         </div>
-
 
         <hr id="tool-paper" />
 
@@ -160,7 +159,7 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col">
-              Get in touch if you have any questions or custom requests
+              Get in touch if you have any questions or custom request
               (pm4knime@fit.fraunhofer.de).
               <h2>
                 <a href="mailto:pm4knime@fit.fraunhofer.de">
