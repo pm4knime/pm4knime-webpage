@@ -179,9 +179,9 @@ export default function Installation() {
               Workflows are built in KNIME by sequentially connecting different nodes where each node is dedicated to performing a specific task based on the results of the preceding nodes. After installing the process mining extension, the process mining nodes will be available in the <code>Node Repository</code> under the <code>Community Nodes</code>.<br></br>
               <img
                 src={baseUrl +
-                  "/assets/images/Installation/PM4KNIME-category-inKNIME.png"}
+                  "/assets/images/Installation/PM4KNIME-category.png"}
                 className="img-fluid img-shadow"
-                alt="Responsive image"
+                alt="image"
               />
               <br></br> You can drag and drop nodes from the Node Repository into your workflow. Information on how to build and execute workflows in KNIME is available in the {" "}
               <a href="https://www.knime.com/getting-started-guide">

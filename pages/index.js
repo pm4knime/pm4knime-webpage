@@ -55,7 +55,7 @@ export default function Home() {
               <img
                 src={basePath + "/assets/pm4knime-screenshot.png"}
                 className="img-fluid img-shadow"
-                alt="Responsive image"
+                alt="image"
               />
             </div>
           </div>

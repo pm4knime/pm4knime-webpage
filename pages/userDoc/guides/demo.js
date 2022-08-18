@@ -12,7 +12,8 @@ export default function Demo() {
             <div className="container">
                 <div className="section">
                     <div className="row-userDoc">
-                        Workflows are built in KNIME by sequentially connecting different nodes where each node is dedicated to performing a specific task based on the results of the preceding nodes. After installing the process mining extension, the process mining nodes will be available in the <code>Node Repository</code> under the <code>Community Nodes</code>.<br></br>
+                        <h3>&nbsp;</h3>
+                        <h3>Demonstration Video</h3>
                         <video controls autoplay
                             src={baseUrl +
                                 "/assets/videos/demoPM4KNIME.mp4"}
