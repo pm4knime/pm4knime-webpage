@@ -49,18 +49,21 @@ const NavbarFull = ({ style }) => {
             <NavDropdown.Divider />
             */}
             <Link href="/userDoc/guides/installation" passHref>
-              <NavDropdown.Item>Installation Instructions</NavDropdown.Item>
+              <NavDropdown.Item>Installation</NavDropdown.Item>
             </Link>
-            <Link href="/userDoc/guides/importantConcepts" passHref>
+            <Link href="/userDoc/guides/demo" passHref>
+              <NavDropdown.Item>Demo</NavDropdown.Item>
+            </Link>
+            {/*<Link href="/userDoc/guides/importantConcepts" passHref>
               <NavDropdown.Item>KNIME Important Concepts</NavDropdown.Item>
-            </Link>
+            </Link>/}*/}
             <Link href="/userDoc/guides/bugReport" passHref>
               <NavDropdown.Item>Bug Report</NavDropdown.Item>
             </Link>
-            <NavDropdown.Divider />
+            {/*<NavDropdown.Divider />
             <Link href="/userDoc/guides/knimeServer" passHref>
               <NavDropdown.Item>KNIME Server Usage</NavDropdown.Item>
-            </Link>
+            </Link>*/}
           </NavDropdown>
         </Nav>
         <Nav>

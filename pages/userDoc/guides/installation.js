@@ -86,27 +86,23 @@ export default function Installation() {
               </li>
               <li>
                 {" "}
-                Go to{" "}
+                Go to the {" "}
                 <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
-                  Process Mining Extension web page on the knime hub
+                  Process Mining Extension web page on the KNIME Hub
                 </a>
                 .
               </li>
               <li>
-                Drag and drop the extension icon to the workbench of KNIME Analytics Platform.
-                <div className={"image-container"}>
-                  <p>
-                    <Image
-                      src={
-                        baseUrl + "/assets/images/Installation/DragAndDrop.png"
-                      }
-                      height="245px"
-                      width="1468px"
-                      alt="Exception screenshot"
-                    ></Image>
-                  </p>
+                Drag and drop the extension icon into the workbench of KNIME Analytics Platform.
+                <div className="row">
+                  <div className="col-12">
+                    <img
+                      src={baseUrl + "/assets/images/Installation/DragAndDrop.png"}
+                      className="img-fluid img-shadow"
+                      alt="Responsive image"
+                    />
+                  </div>
                 </div>
-
               </li>
               <li>
                 A window will open asking if you want to search and install the extension or integration. Click "Yes" and follow the instructions.
@@ -114,7 +110,7 @@ export default function Installation() {
 
             </ol>
 
-            <h3>&nbsp;</h3>
+            {/* <h3>&nbsp;</h3>
             <h3>PM4KNIME Updates and Uninstall</h3>
             <p>
               After installation of PM4KNIME, if there is a new version
@@ -176,39 +172,32 @@ export default function Installation() {
                   instructions later to uninstall PM4KNIME.
                 </p>
               </li>
-            </ol>
+            </ol>*/}
             <h3>&nbsp;</h3>
-            <h3>Extension Screenshot</h3>
+            <h3>Build Your Own Workflow</h3>
             <p>
-              After restarting KNIME, if installation succeeds, it shows one
-              category <code>Process Mining</code> in{" "}
-              <strong>Node Repository</strong>. By clicking on the name, we can
-              get an overview of this extension PM4KNIME. <br></br>
-              <Image
-                src={
-                  baseUrl +
-                  "/assets/images/Installation/PM4KNIME-category-inKNIME.png"
-                }
-                height="500px"
-                width="300px"
-                alt="Exception screenshot"
-              ></Image>
-              <br></br> On the right part of the KNIME, some details information
-              is given on the <code>Process Mining</code>.<br></br>{" "}
-              <Image
-                src={
-                  baseUrl +
-                  "/assets/images/Installation/pm4knime-category-description.png"
-                }
-                height="300px"
-                width="500px"
-                alt="Exception screenshot"
-              ></Image>
+              Workflows are built in KNIME by sequentially connecting different nodes where each node is dedicated to performing a specific task based on the results of the preceding nodes. After installing the process mining extension, the process mining nodes will be available in the <code>Node Repository</code> under the <code>Community Nodes</code>.<br></br>
+              <img
+                src={baseUrl +
+                  "/assets/images/Installation/PM4KNIME-category-inKNIME.png"}
+                className="img-fluid img-shadow"
+                alt="Responsive image"
+              />
+              <br></br> You can drag and drop nodes from the Node Repository into your workflow. Information on how to build and execute workflows in KNIME is available in the {" "}
+              <a href="https://www.knime.com/getting-started-guide">
+                KNIME Getting Started Guide
+              </a>
+              .
             </p>
             <h2>&nbsp;</h2>
-            <h2>KNIME Server Installation</h2>
+            <h2>KNIME Server</h2>
             <h3>&nbsp;</h3>
-            <h3>Requirments:</h3>
+            The KNIME Server is the commercial version of KNIME that extends KNIME to enable users to work cooperatively on workflows. Moreover, it supports automated and distributed executions of workflows, deployment options, workflow management, and monitoring functionalities. For more information on the KNIME Server and for licensing and pricing questions, please visit the {" "}
+            <a href="https://www.knime.com/knime-server">
+              web page of the KNIME Server
+            </a>
+            .
+            {/* <h3>Requirments:</h3>
             <ul>
               <li>
                 academic license to get the academic license, we need to provide
@@ -246,6 +235,7 @@ export default function Installation() {
                 to contact KNIME team again to update the license.
               </li>
             </ul>
+            */}
           </div>
         </div>
       </div>
