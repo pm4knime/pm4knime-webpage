@@ -19,56 +19,42 @@ have the the base url or it does not work
           <div className="row-userDoc">
             <h1>Bug Report in PM4KNIME</h1>
             <p>
-              This section provides the Email template to report bugs on
-              PM4KNIME, aiming to benefit the easy communication and clear
-              problem report. Before you report bugs, please make sure your
-              current version the newest. To use the newest version, update or
-              install it with the{" "}
-              <Link href="/userDoc/guides/installation">
-                <a>instruction</a>
-              </Link>
-              .
+              This section provides the email template to report bugs on PM4KNIME. Before you report bugs, please make sure your current version is the latest.
             </p>
             <h2>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-exception-screenshot-is"></a>
             </h2>
-            <h2>PM4KNIME bug report in Email</h2>
+            <h2>Bug Report - Email Template</h2>
             <p>Email address: pm4knime@fit.fraunhofer.de&nbsp;</p>
             <p>
-              node ##XXX Node## with exception <code>Exception X</code>
+              Node ##XXX Node## with exception <code>Exception X</code>.
             </p>
             <h4>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-exception-screenshot-is"></a>
             </h4>
-            <h4>The Exception Screenshot is:</h4>
+            <p>The Exception Screenshot is:</p>
             <p>.....</p>
             <h4>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-example-workflow-is"></a>
             </h4>
-            <h4>The Example workflow is:</h4>
+            <p>The Example workflow is:</p>
             <p>......</p>
             <h4>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#more-information-in-my-knime-log"></a>
             </h4>
-            <h4>More information in my KNIME Log:</h4>
+            <p>More information in the KNIME Log:</p>
             <p>.....</p>
-            <p>
-              Given one concrete example, the bug report on the node{" "}
-              <strong>Alignment Based Replayer(Default)</strong> with exception{" "}
-              <code>NullPointerException</code>.
-            </p>
+            <h3>
+              Example:
+            </h3>
             <h3>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#pm4knime-bug-report"></a>
             </h3>
-            <h3>PM4KNIME bug report</h3>
+
             <p>
-              node <strong>Alignment Based Replayer(Default)</strong> with
-              exception <code>NullPointerException</code>
+              Node <strong>Alignment Based Replayer(Default)</strong> with exception <code>NullPointerException</code>.
             </p>
-            <h4>
-              <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-exception-screenshot-is-1"></a>
-            </h4>
-            <h4>The Exception Screenshot is:</h4>
+            <p>The Exception Screenshot is:</p>
             <div className={"image-container"}>
               <p>
                 <Image
@@ -84,7 +70,7 @@ have the the base url or it does not work
             <h4>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-example-workflow-is-1"></a>
             </h4>
-            <h4>The Example workflow is:</h4>
+            <p>The Example workflow is:</p>
             <div className={"image-container"}>
               <p>
                 To do it, we need to export the workflow through the operation:
@@ -100,7 +86,7 @@ have the the base url or it does not work
             <h4>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#more-information-in-my-knime-log-1"></a>
             </h4>
-            <h4>More information in my KNIME Log:</h4>
+            <p>More information in the KNIME Log:</p>
             <div className={"image-container"}>
               <p>
                 To find the knime.log which records the exception information
@@ -121,50 +107,17 @@ have the the base url or it does not work
             <h2>
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#pm4knime-bug-report-in-github"></a>
             </h2>
-            <h2>PM4KNIME bug report in Github</h2>
+            <h2>Bug Report In GitHub</h2>
             <p>
-              Following the guide in github{" "}
+              You can follow the steps in the guide {" "}
               <a href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue">
-                how to create issue
+                how to create an issue
               </a>
-              , the steps to report bugs on pm4knime can be done with opening
-              issue on the pm4knime/pm4knime-development. Concrete steps are:
+              {" "} to report bugs on GitHub. Our repository is available under{" "} <a href="https://github.com/pm4knime/pm4knime-core">
+                link
+              </a>. Please provide the same information and screenshots required for the email template.
             </p>
-            <ol>
-              <li>
-                <p>Go to issue page of pm4knime/pm4knime-development</p>
-              </li>
-              <li>
-                <p>Create a new issue with clicking on &quot;New issue&quot;</p>
-              </li>
-              <li>
-                <p>Report the bug with the same template like in Email.</p>
-              </li>
-            </ol>
-            <h4>
-              <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-exception-screenshot-is-2"></a>
-            </h4>
-            <h4>The Exception Screenshot is:</h4>
-            <p>
-              Drag the saved screenshot into the issue dialog. It will upload
-              automatically.
-            </p>
-            <h4>
-              <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-example-workflow-is-2"></a>
-            </h4>
-            <h4>The Example workflow is:</h4>
-            <p>
-              It can <strong>not</strong> be uploaded currently!!
-            </p>
-            <h4>
-              <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#more-information-in-my-knime-log-2"></a>
-            </h4>
-            <h4>More information in my KNIME Log:</h4>
-            <p>
-              Drag the saved log into the issue dialog. It will upload
-              automatically.
-            </p>
-            <p>Any report is welcome and will be take seriously.</p>
+
           </div>
         </div>
       </div>

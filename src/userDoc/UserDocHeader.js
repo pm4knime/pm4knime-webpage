@@ -81,6 +81,10 @@ const NavbarFull = ({ style }) => {
               <NavDropdown.Item>Preprocessing</NavDropdown.Item>
             </Link>
             <NavDropdown.Divider />
+            <Link href="/userDoc/guides/demos/workflows" passHref>
+              <NavDropdown.Item>Application to Real-Life Data</NavDropdown.Item>
+            </Link>
+            <NavDropdown.Divider />
             {/*<Link href="/userDoc/guides/demos/organizationOnWorkflow" passHref>
               <NavDropdown.Item>Organization on Workflow</NavDropdown.Item>
             </Link>
@@ -89,13 +93,13 @@ const NavbarFull = ({ style }) => {
             </Link>
             <Link href="/userDoc/guides/demos/workWithJava" passHref>
               <NavDropdown.Item>Working with Java</NavDropdown.Item>
-            </Link>*/}
+            </Link>
             <Link href="/userDoc/guides/demos/repetiveExecution" passHref>
               <NavDropdown.Item>Repetitive Execution of Workflow</NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/parameterOptimization" passHref>
               <NavDropdown.Item>Parameter Optimization</NavDropdown.Item>
-            </Link>
+            </Link>*/}
             <Link href="/userDoc/guides/demos/workWithPython" passHref>
               <NavDropdown.Item>Python Integration</NavDropdown.Item>
             </Link>
