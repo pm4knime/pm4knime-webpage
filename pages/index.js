@@ -29,7 +29,7 @@ export default function Home() {
                   href="http://fit.fraunhofer.de/process-mining"
                   target="_blank"
                 >
-                  process mining research group
+                  Process Mining Group
                 </a>{" "}
                 of the{" "}
                 <a href="http://fit.fraunhofer.de/" target="_blank">
