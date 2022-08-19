@@ -88,7 +88,7 @@ export default function LogManipulation() {
               </li>
               <img
                 src={basePath +
-                  "/assets/images/logManipulation/LogMerge-configuration-internal-trace-02.PNG"}
+                  "/assets/images/logManipulation/LogMerge-configuration-internal-trace-022.png"}
                 className="img-fluid img-shadow"
                 alt="image"
               />
