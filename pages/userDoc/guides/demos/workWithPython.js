@@ -13,7 +13,7 @@ export default function WorkWithPython() {
           <div className="row-userDoc">
             <h1>Python Integration</h1>
             <p>
-              KNIME provides a Python extension that enables python scripting in KNIME.In this example, we demonstrate how to integrate the process mining library {" "}
+              KNIME provides a Python extension that enables python scripting in KNIME. In this example, we demonstrate how to integrate the process mining library {" "}
               <a href="http://pm4py.org/" target="_blank">
                 PM4Py
               </a>{" "} into KNIME. We will use PM4Py to apply process discovery.
@@ -23,7 +23,7 @@ export default function WorkWithPython() {
 
             <ol>
               <li>
-                First, you need to install the KNIME Python Integration. Instruction are available under {" "}
+                First, you need to install the KNIME Python Integration. Instructions are available under {" "}
                 <a
                   href="https://docs.knime.com/2018-12/python_installation_guide/index.html"
                   rel="nofollow"
