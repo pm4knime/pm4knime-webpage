@@ -66,7 +66,7 @@ export default function IntroductionDemos() {
                 <a>Parameter Optimization </a>
               </Link>
             </h5>
-            <h5>&nbsp;</h5>
+            {/*<h5>&nbsp;</h5>
             <h5>
               <Link href="/userDoc/guides/demos/organizationOnWorkflow">
                 <a>Organization on Workflow </a>
@@ -89,7 +89,7 @@ export default function IntroductionDemos() {
               <Link href="/userDoc/guides/demos/workWithJava">
                 <a>Work with Java Programming</a>
               </Link>
-            </h5>
+            </h5>*/}
             <h5>&nbsp;</h5>
             <h5>
               {" "}

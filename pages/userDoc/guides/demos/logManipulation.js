@@ -10,166 +10,92 @@ export default function LogManipulation() {
       <div className="container">
         <div className="section">
           <div className="row-userDoc">
-            <h1>Log Manipulation</h1>
+            <h1>Preprocessing</h1>
             <p>
-              In this section, we will demonstrate the use of log manipulation.
-              To be more precise, the usage of splitting and filtering the event
-              log.
+              In this example, we demonstrate how to preprocess event logs in PM4KNIME. An example workflow is shown below:
             </p>
-            <Image
-              style={{ marginBottom: 0 }}
-              src={
-                basePath +
-                "/assets/images/logManipulation/demo-simple-log-manipulation.PNG"
-              }
-              width="400px"
-              height="150px"
-              alt="demo-simple-discover.png"
+            <img
+              src={basePath + "/assets/images/logManipulation/complettLog.PNG"}
               className="img-fluid img-shadow"
-            ></Image>
-            <div className="new-wrapper">
-              <Image
-                style={{ marginBottom: 0 }}
-                src={
-                  basePath + "/assets/images/logManipulation/complettLog.jpg"
-                }
-                width="450px"
-                height="250px"
-                alt="complettLog.jpg"
-                className="img-fluid img-shadow"
-              ></Image>
-              <p>
-                First, download the dataset from github, after that extract the
-                event log file "running-examples.xes" from the downloaded
-                dataset. Second, import "running-example-non-conforming.xes" and
-                "running-example-just-two-cases.xes" with the "XES Reader" node.
-                After that, connect the "XES Reader" to the "Filter Log By
-                Frequency" node.
-              </p>
-            </div>
+              alt="image"
+            />
 
-            <div className="new-wrapper">
-              <Image
-                style={{ marginBottom: 0 }}
-                src={
-                  basePath +
-                  "/assets/images/logManipulation/filterLogDialog.jpg"
-                }
-                width="350px"
-                height="150px"
-                alt="filterLogDialog.jpg"
-                className="img-fluid img-shadow"
-              ></Image>
-              <p>
-                Now we connect the node that reads the
-                "running-example-just-two-cases.xes",we configure our "Filter
-                Log By Frequency" node.
-              </p>
-            </div>
-            <p>
-              The option "Keep trace" means that the chosen traces that match
-              the following conditions will be kept. If not selected, the traces
-              matching the conditions will be removed.
-            </p>
 
             <p>
-              {" "}
-              The option "isForSingleTV" indicates (when checked) if we want to
-              apply the filter on trace variant or on the whole event log(when
-              unchecked).
+              The following steps will guide you to preprocess an event log.
             </p>
+            <ol>
+              <li>
+                Import your event log into your workflow. For example, you can use the node <strong>XES Reader</strong> to import an event log from an XES file.
+              </li>
 
-            <p>
-              {" "}
-              The option "Threshold" defines the threshold to filter. It accepts
-              both percentage and absolute value. With value 0-1.0, it means the
-              percentage in the whole event log size. When it is equal or
-              greater than 1, it represents the absolute integer threshold.After
-              configuration, it will be casted down into an integer value.The
-              trace with equal or greater size than the threshold will be
-              filtered.{" "}
-            </p>
+              <li>
+                Drag the node <strong>Filter Event XLog By Frequency</strong> into your workflow. Connect the event log to the input port of the node.
+              </li>
 
-            <p>
-              For that example we check both boxes and choose the threshold to
-              be 0,1.
-            </p>
-
-            <div className="new-wrapper">
-              <Image
-                style={{ marginBottom: 0 }}
-                src={
-                  basePath +
-                  "/assets/images/logManipulation/filteredEventLog.jpg"
-                }
-                width="350px"
-                height="150px"
-                alt="filteredEventLog.jpg"
-                className="img-fluid img-shadow"
-              ></Image>
-              <p>
-                {" "}
-                After the execution, the log should be trace variant filtered,
-                by a factor of 0,1. The filtered log can be viewed in the log
-                view of the node.
-              </p>
-              <Image
-                style={{ marginBottom: 0 }}
-                src={
-                  basePath + "/assets/images/logManipulation/complettLog.jpg"
-                }
-                width="450px"
-                height="250px"
-                alt="complettLog.jpg"
-                className="img-fluid img-shadow"
-              ></Image>
-              <p>
-                In the end, we merge the filtered log with the other "XES
-                Reader". Considering our filtered and imported event log, we
-                connect the output ports from the filtered and the imported
-                event log into the "MergeLog" node.
-              </p>
-              <Image
-                style={{ marginBottom: 0 }}
-                src={
-                  basePath +
-                  "/assets/images/logManipulation/LogMerge-configuration-internal-trace-02.png"
-                }
-                width="450px"
-                height="250px"
-                alt="LogMerge-configuration-internal-trace-02"
-                className="img-fluid img-shadow"
-              ></Image>
-              <p>
-                Inside of the "MergeLog" node we have several merge strategies.
+              <li>
+                Double-click the node to open the dialog. Configure the settings, then Click "OK".
                 <ul>
                   <li>
-                    <b>Seperate Trace</b> it combines the traces from the two
-                    event logs together. Traces with the same caseID are allowed
-                    in the merged event log.
+                    If the option <strong>Keep</strong> is enabled, the traces/trace variants that meet the filtering threshold will be kept. Otherwise, the traces/trace variants that meet the filtering threshold will be removed.
+                  </li>
+
+                  <li>
+                    If the option <strong>Trace Variant Filtering</strong> is enabled, the filtering will be applied on the trace variant level; i.e., trace variants that meet the filtering threshold will be kept/removed. If this option is disabled, the filtering threshold is used to set the percentage of traces to be kept/removed.
+                  </li>
+
+                  <li>
+                    The option <strong>Threshold</strong> is for setting the filtering threshold. It accepts both relative and absolute values (relative values between 0 and 1.0 and absolute integers greater than 1).
+                  </li>
+
+
+
+                </ul>
+              </li>
+
+              <img
+                src={basePath +
+                  "/assets/images/logManipulation/filterLogDialog.PNG"}
+                className="img-fluid img-shadow"
+                alt="image"
+              />
+
+              <li>
+                After executing the node, the filtered log can be accessed through the output port of the node <strong>Filter Event XLog By Frequency</strong>.
+              </li>
+
+
+              <li>
+                You can use the node <strong>Merge Event XLogs</strong> to merge two event logs. Connect two event logs to the input ports of the node.
+              </li>
+
+              <li>
+                Double-click the node to open the dialog. Configure the settings, then Click "OK". The following merging strategies are available:
+                <ul>
+                  <li>
+                    <b>Separate Trace:</b> traces with the same caseID are added to the merged event log as separate traces.
                   </li>
                   <li>
-                    <b>IgnoreTrace</b> it ignores the traces from the second
-                    event log with the same caseID from the first event log.
+                    <b>Ignore Trace:</b> traces with the same caseID from both logs, only the traces from the first event log are added to the merged event log.
                   </li>
                   <li>
-                    <b>Internal Trace Merge</b>, for the traces with the same
-                    caseID, it combines the events from the two traces together.
-                    The trace attributes can be chosen for the new attributes.
-                    An Example can be seen on the left.{" "}
+                    <b>Internal Trace Merge:</b> traces with the same caseID are merged into a single trace containing all events from these traces.
                   </li>
                   <li>
-                    <b>Internal Event Merge</b>, for the events with the same
-                    names in the traces with the same caseID, it creates one new
-                    event and with the chosen attributes.
+                    <b>Internal Event Merge:</b> traces with the same caseID are merged into a single trace, and events with the same eventID in this trace are merged into a single event.
                   </li>
                 </ul>
-              </p>
-            </div>
-            <p>
-              The generated event log can observed in the view of "MergeLog"
-              view.
-            </p>
+              </li>
+              <img
+                src={basePath +
+                  "/assets/images/logManipulation/LogMerge-configuration-internal-trace-02.PNG"}
+                className="img-fluid img-shadow"
+                alt="image"
+              />
+              <li>
+                After executing the node, the generated event log can be accessed through the output port of the node <strong>Merge Event XLogs</strong>.
+              </li>
+            </ol>
           </div>
         </div>
       </div>

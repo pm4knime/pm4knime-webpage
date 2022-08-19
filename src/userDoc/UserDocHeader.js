@@ -68,30 +68,40 @@ const NavbarFull = ({ style }) => {
         </Nav>
         <Nav>
           <NavDropdown title="Examples" id="collasible-nav-dropdown">
-            <Link href="/userDoc/guides/demos" passHref>
+            {/*<Link href="/userDoc/guides/demos" passHref>
               <NavDropdown.Item>Introduction Demos</NavDropdown.Item>
-            </Link>
+            </Link>*/}
             <Link href="/userDoc/guides/demos/processDiscovery" passHref>
               <NavDropdown.Item>Process Discovery</NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/conformance" passHref>
-              <NavDropdown.Item>Confromance</NavDropdown.Item>
+              <NavDropdown.Item>Conformance Checking</NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/logManipulation" passHref>
-              <NavDropdown.Item>Log Manipulation</NavDropdown.Item>
+              <NavDropdown.Item>Preprocessing</NavDropdown.Item>
             </Link>
             <NavDropdown.Divider />
-            <Link href="/userDoc/guides/demos/organizationOnWorkflow" passHref>
+            <Link href="/userDoc/guides/demos/workflows" passHref>
+              <NavDropdown.Item>Application to Real-Life Data</NavDropdown.Item>
+            </Link>
+            <NavDropdown.Divider />
+            {/*<Link href="/userDoc/guides/demos/organizationOnWorkflow" passHref>
               <NavDropdown.Item>Organization on Workflow</NavDropdown.Item>
             </Link>
-            <Link href="/userDoc/guides/demos/knimeNodes" passHref>
+            {/*<Link href="/userDoc/guides/demos/knimeNodes" passHref>
               <NavDropdown.Item>KNIME Nodes</NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/workWithJava" passHref>
               <NavDropdown.Item>Working with Java</NavDropdown.Item>
             </Link>
+            <Link href="/userDoc/guides/demos/repetiveExecution" passHref>
+              <NavDropdown.Item>Repetitive Execution of Workflow</NavDropdown.Item>
+            </Link>
+            <Link href="/userDoc/guides/demos/parameterOptimization" passHref>
+              <NavDropdown.Item>Parameter Optimization</NavDropdown.Item>
+            </Link>*/}
             <Link href="/userDoc/guides/demos/workWithPython" passHref>
-              <NavDropdown.Item>Working with Python</NavDropdown.Item>
+              <NavDropdown.Item>Python Integration</NavDropdown.Item>
             </Link>
           </NavDropdown>
         </Nav>
