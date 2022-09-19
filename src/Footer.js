@@ -14,16 +14,16 @@ export default Footer => {
         <div>
           <a
             className="float-right"
-            href="#"
+            href="https://dsi.informationssicherheit.fraunhofer.de/en/dsi/pm4knime.github.io"
             data-toggle="modal"
             data-target="#DataProtectionModal"
           >
             Data Protection
           </a>
-          <span className="float-right ml-1 mr-1 text-muted">|</span>
+          <span className="float-right ml-1 mr-1 text-muted">{" "} | {" "}</span>
           <a
             className="float-right"
-            href="#"
+            href="https://dsi.informationssicherheit.fraunhofer.de/en/impressum/pm4knime.github.io"
             data-toggle="modal"
             data-target="#ImprintModal"
           >
